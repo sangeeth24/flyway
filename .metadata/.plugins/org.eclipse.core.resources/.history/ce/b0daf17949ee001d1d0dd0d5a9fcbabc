@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<h1>AirLine List :</h1>
+<table border="1">
+	<tr>
+		<th>code</th>
+		<th>name</th>
+	</tr>
+	<%
+	while (rs.next()) {
+	%>
+	<tr>
+		<td>
+			<%=
+			rs.getString(1)
+			%>
+		</td>
+		<td>
+			<%=
+			rs.getString(2)
+			%>
+		</td>
+		
+	</tr>
+	<%
+	}
+	%>
+</table>
+
